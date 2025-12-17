@@ -301,3 +301,41 @@ body {
     font-size: 0.85rem;
   }
 }
+
+/* ACHIEVEMENTS */
+.achievements-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.achievement-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.year {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+
+.achievement-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .achievement-item {
+    grid-template-columns: 1fr;
+  }
+
+  .year {
+    font-size: 1.1rem;
+  }
+}
