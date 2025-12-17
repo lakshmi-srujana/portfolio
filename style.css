@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0e0e0e;
+  color: #f3e8d3;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  gap: 60px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 7rem;
+  letter-spacing: 5px;
+}
+
+.tagline {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 12px;
+}
+
+/* TOC */
+.toc {
+  padding: 80px;
+}
+
+.toc h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.toc-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 22px;
+  border: 1px solid #f3e8d3;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #f3e8d3;
+  transition: 0.3s;
+}
+
+.toc-buttons a:hover {
+  background: #f3e8d3;
+  color: #0e0e0e;
+}
+
+/* CONTENT */
+.content {
+  padding: 80px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  border: 1px solid #f3e8d3;
+  padding: 10px 18px;
+  border-radius: 30px;
+  margin: 8px;
+}
+
+/* THANK YOU */
+.thankyou {
+  margin-top: 40px;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+}
