@@ -213,3 +213,91 @@ body {
   color: inherit;
   display: block;
 }
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+/* Tablets & smaller laptops */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-img img {
+    width: 260px;
+    margin-top: 30px;
+  }
+
+  .toc,
+  .content {
+    padding: 50px 30px;
+  }
+
+  .toc h2,
+  .content h2 {
+    font-size: 2.2rem;
+  }
+
+  .toc-buttons a {
+    margin: 8px 6px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+
+  .name {
+    font-size: 0.85rem;
+  }
+}
